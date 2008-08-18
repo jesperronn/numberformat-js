@@ -17,19 +17,10 @@
           element.value = currency_formatter(int);
     };
     var currency_formatter = function(int){
+        //first reverse array (to work from back), then slice in 3
+        // for each group, reverse and join the 3 numbers 
+        // Reverse the direction of the groups and then add thousand separators between
         return int.toArray().reverse().eachSlice(3, function(group){return group.reverse().join('')}).reverse().join(mil_delim);
-        // var out     = [];
-        //         var numbers = int.split("");
-        //         var ln  = numbers.length;
-        //         var j = 0;//position mil_delim from behind
-        //         for (var i = ln - 1; i >= 0; i--){
-        //           if(j > 0 && j%3==0){
-        //             out.push(mil_delim);
-        //           }
-        //           j++;
-        //           out.push(numbers[i]);
-        //         };
-        //         return out.reverse().join('');
     }; 
       
     $(document).observe("dom:loaded", function() { init(); });
