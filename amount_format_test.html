@@ -1,0 +1,43 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+    <head>
+      <title>form validation test</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+      <script src="prototype-1.6.0.2.js" type="text/javascript"></script>
+      <script src="numberformat.js" type="text/javascript"></script>
+      <style type="text/css" media="screen">
+        .colored{ background-color: #ffb;}
+        input.currency{ width: 150px;}
+      </style>
+
+
+    </head>
+
+    <body>
+<form name="numberformat_form">
+    <h1>form validation test</h1>
+    <p>see that form fields with css classes can numberformat number. Just add css <code>class="numberformat currency"</code></p>
+    <p><legend>Amount pure integer:<br/>
+      <input type="text" name="f1" value="100000" id="f1" class="numberformat currency"/></legend>
+    </p>
+    <p><legend>Amount already with thousand separator: <br/>
+      <input type="text" name="f2" value="100,000" id="f2" class="numberformat currency"/></legend>
+    </p>
+    <p><legend>Big amount already with thousand separator: <br/>
+      <input type="text" name="f3" value="12,123,000" id="f3" class="numberformat currency"/></legend>
+    </p>
+    <p><legend>Amount with incorrect thousand separator: <br/>
+      <input type="text" name="f4" value="12,12,3,000" id="f4" class="numberformat currency"/></legend>
+    </p>
+    <p><legend>Later (if time permits), round numbers by stripping decimals: <br/>
+      <input type="text" name="f5" value="10000.93" id="f5" class="numberformat currency"/></legend>
+    </p>
+    <p><input type="reset" name="some_name" value="reset" id="some_name"></p>
+
+</form>    
+
+    </body>
+    </html>
+
+
