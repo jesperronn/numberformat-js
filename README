@@ -1,0 +1,18 @@
+Autoformat numbers to show thousand separators as delimiters.
+See that form fields with css classes can autoformat number. 
+Just add css class="numberformat currency" to a text field, and it will be formatted automatically.
+
+This code is open so you could add more behaviour later. For instance add more formatters (not only currency).
+
+TODO: Add more formatters (not only currency)
+TODO: Make thousand/decimal delimiters globally modifiable so that the js file does not have to be changed
+      in a project.
+
+
+Created by Jesper Rønn-Jensen, 2008-08-17
+
+Repository http://github.com/jesperronn/numberformat-js/
+http://justaddwater.dk/2008/08/18/introducing-tiny-javascript-number-formatter/
+
+
+LICENSE: Open Source, Creative Commons ShareAlike 

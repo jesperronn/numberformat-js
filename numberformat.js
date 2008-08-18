@@ -1,3 +1,13 @@
+/*
+  Autoformat numbers to show thousand separators as delimiters.
+  See that form fields with css classes can autoformat number. 
+  Just add css class="numberformat currency" to a text field, and it will be formatted automatically.
+  
+  This code is open so you could add more behaviour later. For instance add more formatters (not only currency).
+  
+  Created by Jesper Rønn-Jensen, 2008-08-17
+
+*/
 (function(){ 
     var mil_delim = ',';
     var dec_delim = '.';
